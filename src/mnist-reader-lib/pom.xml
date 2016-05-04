@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>lmiguelmh.mnist.reader.lib</groupId>
+    <artifactId>mnist-reader-lib</artifactId>
+    <version>1.0</version>
+    <packaging>nar</packaging>
+
+    <name>C/C++ NAR Project for CLion IDE</name>
+    <description>
+        C/C++ NAR Project ready to be open in CLion IDE. *Important*: CLion doesn't support natively MAVEN NAR plugin.
+        Use the Terminal (Alt+F12) to compile, test, and install/deploy your project.
+        Maven NAR 3.2.3 and older versions will require your tools in your PATH.
+        Since 3.3.0 Maven NAR will try to autodetect your tools.
+        To configure CLion for msvc12 see http://stackoverflow.com/a/34658125/2692914 (Maven NAR before 3.3.0)
+        mvn compile
+        mvn test
+        mvn install
+    </description>
+
+    <!--
+    <properties>
+      <skipTests>true</skipTests>
+    </properties>
+    -->
+
+    <!--
+    See README.md
+    -->
+    <dependencies>
+        <!-- LIBRARY DEPENDENCIES -->
+        <!-- opencv
+        <dependency>
+            <groupId>org.opencv</groupId>
+            <artifactId>opencv-core</artifactId>
+            <version>2.4.10</version>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.opencv</groupId>
+            <artifactId>opencv-highgui</artifactId>
+            <version>2.4.10</version>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.opencv</groupId>
+            <artifactId>opencv-imgproc</artifactId>
+            <version>2.4.10</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- commons
+        <dependency>
+            <groupId>lmiguelmh.commons</groupId>
+            <artifactId>commons</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- file-lib -->
+        <dependency>
+            <groupId>lmiguelmh.file.lib</groupId>
+            <artifactId>file-lib</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+
+        <!-- coutlogger-lib a mock logger for LOGT,LOGD,... -->
+        <dependency>
+            <groupId>lmiguelmh.coutlogger.lib</groupId>
+            <artifactId>coutlogger-lib</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+
+        <!-- log4z
+        <dependency>
+            <groupId>zsummer.log4z</groupId>
+            <artifactId>log4z</artifactId>
+            <version>3.0.1</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- rapidjson
+        <dependency>
+            <groupId>miloyip.rapidjson</groupId>
+            <artifactId>rapidjson</artifactId>
+            <version>1.0.2</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- basen
+        <dependency>
+            <groupId>azawadzki.basen.lib</groupId>
+            <artifactId>basen-lib</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- MY DEPENDENCIES -->
+        <!-- commons
+        <dependency>
+            <groupId>lmiguelmh.commons</groupId>
+            <artifactId>commons</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- jdk-jni
+        <dependency>
+            <groupId>java.jni</groupId>
+            <artifactId>jni-include</artifactId>
+            <version>jdk1.7.0_80</version>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>java.jni</groupId>
+            <artifactId>jni-include-win32</artifactId>
+            <version>jdk1.7.0_80</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- pipe-lib
+        <dependency>
+            <groupId>lmiguelmh.pipe.lib</groupId>
+            <artifactId>pipe-lib</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- jni-lib
+        <dependency>
+            <groupId>lmiguelmh.jni.lib</groupId>
+            <artifactId>jni-lib</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- process-lib
+        <dependency>
+            <groupId>lmiguelmh.process.lib</groupId>
+            <artifactId>process-lib</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- winreg-lib
+        <dependency>
+            <groupId>lmiguelmh.winreg.lib</groupId>
+            <artifactId>winreg-lib</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+        </dependency>
+        -->
+
+        <!-- TEST DEPENDENCIES -->
+        <!-- gtest
+        <dependency>
+            <groupId>google.gtest</groupId>
+            <artifactId>gtest</artifactId>
+            <version>1.7.0</version>
+            <type>nar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>google.gtest</groupId>
+            <artifactId>gtest-main</artifactId>
+            <version>1.7.0</version>
+            <type>nar</type>
+            <scope>test</scope>
+        </dependency>
+        -->
+
+        <dependency>
+            <groupId>lmiguelmh.argsparser.lib</groupId>
+            <artifactId>argsparser-lib</artifactId>
+            <version>1.0</version>
+            <type>nar</type>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <defaultGoal>integration-test</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>com.github.maven-nar</groupId>
+                <artifactId>nar-maven-plugin</artifactId>
+                <version>3.4.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <libraries>
+                        <!--
+                        all of these configurations could be enabled at the same time
+                        the NAR plugin will generate an artifact for each one
+                        -->
+                        <!-- executable
+                        <library>
+                            <type>executable</type>
+                            <run>true</run>
+                        </library>
+                        -->
+
+                        <!-- static library
+                        <library>
+                          <type>static</type>
+                        </library>
+                        -->
+
+                        <!-- shared library
+                        <library>
+                          <type>shared</type>
+                        </library>
+                        -->
+                    </libraries>
+
+                    <!-- comment this if you don't want to execute and generate the test -->
+                    <tests>
+                        <!-- a statically linked test -->
+                        <test>
+                            <name>mnist-reader-lib-test</name>
+                            <link>static</link>
+                        </test>
+
+                        <!-- a test with shared dependencies
+                        <test>
+                            <name>mnist-reader-lib-test-md</name>
+                            <link>shared</link>
+                        </test>
+                        -->
+                    </tests>
+
+                    <!-- see README.md
+                    <msvc>
+                        <version>11.0</version>
+                        <windowsSdkVersion>8.0</windowsSdkVersion>
+                    </msvc>
+                    -->
+
+                    <!-- adding system libraries
+                    <linker>
+                        <sysLibs>
+                            <sysLib>
+                                <name>pthread</name>
+                            </sysLib>
+                        </sysLibs>
+                    </linker>
+                    -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
