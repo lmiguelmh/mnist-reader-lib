@@ -1,4 +1,4 @@
-MNIST digits database reader in C++. Project for PUCP/mi/ml. Uses CLion, MAVEN NAR plugin and VS2015 Community Edition.
+MNIST digits database reader in C++, it will write the digits as .PGM image files. Project for PUCP/mi/ml. Uses CLion, MAVEN NAR plugin and VS2015 Community Edition.
 
 INSTRUCTIONS FOR RUNNING THE READER
 Download and install VS2015 redistributable from https://www.microsoft.com/en-us/download/details.aspx?id=48145. This is not needed if you have VS2015 installed.
